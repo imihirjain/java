@@ -1,24 +1,23 @@
 class Mahesh {
-    int x;
-    int y;
+    static int x;
+    public int y;
 
-    static void fun1() {
-        System.out.println("A");
+    void setData() {
+        x = 5;
+        y = 22;
     }
 
-    static void fun2() {
-        System.out.println("B");
+    void display() {
+        System.out.println(x);
+        System.out.println(y);
     }
 }
 
 public class Object1 {
     public static void main(String[] args) {
-        System.out.println("This is an example of creating an object of another class");
         Mahesh m1 = new Mahesh();
-        Mahesh m2 = new Mahesh();
-        m1.x = 51;
-        System.out.println(m1.x);
-        System.out.println(m2.y);
-        System.out.println((fun1()));
+        m1.setData();
+        m1.y = 55;
+        m1.display();
     }
 }

@@ -33,7 +33,7 @@ class Parent {
 class Child1 extends Parent {
     int z;
 
-    Child() {
+    Child1() {
         super(6, 7);
         System.out.println("Child's constructor executed");
     }
